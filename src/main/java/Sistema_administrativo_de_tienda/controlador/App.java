@@ -5,6 +5,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -14,23 +15,25 @@ import java.io.IOException;
  */
 public class App extends Application {
 
-    private static Scene scene;
 
     @Override
-    public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("Menu jefe"));
-        stage.setScene(scene);
-        stage.show();
+    public void start(Stage stage) throws IOException {   	
+    	try {
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("Menu jefe.fxml"));        
+            Pane ventana = (Pane) loader.load();
+
+            // Show the scene containing the root layout.
+            Scene scene = new Scene(ventana);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    	
     }
 
-    static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
-    }
 
-    private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
-        return fxmlLoader.load();
-    }
 
     public static void main(String[] args) {
         ConnectionDb connectionDb = new ConnectionDb();
