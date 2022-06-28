@@ -13,38 +13,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class CreacionDeProductoController implements Initializable {
 
     @FXML
     private Button regresar;
-    
-    @FXML
-    private Button Activar;
-
-    @FXML
-    private Button Actualizar;
-
-    @FXML
-    private TextField Codigoproduco;
-
-    @FXML
-    private Button Desactivar;
-
-    @FXML
-    private TextField Nombreproducto;
-
-    @FXML
-    private TextField PorcentajeIVA;
-
-    @FXML
-    private TextField Precioventa;
-
-    @FXML
-    private TextField TipoIVA;
-
     
     @Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -71,23 +45,8 @@ public class CreacionDeProductoController implements Initializable {
             myStage.close();
 
         } catch (IOException ex) {
-            Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
-    
-    @FXML
-    void Activarproducto(ActionEvent event) {
-
-    }
-
-    @FXML
-    void Actualizarproducto(ActionEvent event) {
-
-    }
-
-    @FXML
-    void Desactivarproducto(ActionEvent event) {
-
     }
 
 

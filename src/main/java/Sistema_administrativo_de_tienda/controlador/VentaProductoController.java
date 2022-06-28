@@ -13,28 +13,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class VentaProductoController implements Initializable{
 
     @FXML
     private Button regresar;
-    
-    @FXML
-    private Button Cancelar;
-
-    @FXML
-    private TextField DineroADevolver;
-
-    @FXML
-    private TextField DineroRecibido;
-
-    @FXML
-    private TextField Preciototal;
-
-    @FXML
-    private Button Terminar;
     
     @Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -62,21 +46,8 @@ public class VentaProductoController implements Initializable{
             myStage.close();
 
         } catch (IOException ex) {
-            Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-    @FXML
-    void CancelarVenta(ActionEvent event) {
-
-    }
-
-    @FXML
-    void TerminarVenta(ActionEvent event) {
-
-    }
-
-    
-    
 
 }
