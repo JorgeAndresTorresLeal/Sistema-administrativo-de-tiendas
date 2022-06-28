@@ -13,12 +13,38 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class RegistroEntradaDePrductoController implements Initializable{
 
     @FXML
     private Button regresar;
+    
+    @FXML
+    private TextField Cantidad;
+
+    @FXML
+    private TextField Codigoproducto;
+
+    @FXML
+    private DatePicker Fechavencimiento;
+
+    @FXML
+    private Button Guardar;
+
+    @FXML
+    private TextField Lote;
+
+    @FXML
+    private TextField Nombreproducto;
+
+    @FXML
+    private TextField Preciocompraproducto;
+
+    @FXML
+    private TextField Proveedor;
     
     @Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -46,8 +72,13 @@ public class RegistroEntradaDePrductoController implements Initializable{
             myStage.close();
 
         } catch (IOException ex) {
-            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+    
+    @FXML
+    void Guardarentradadeproducto(ActionEvent event) {
+
     }
 
 }

@@ -19,7 +19,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {   	
     	try {
-            FXMLLoader loader = new FXMLLoader(App.class.getResource("Menu jefe.fxml"));        
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("Inicio.fxml"));        
             Pane ventana = (Pane) loader.load();
 
             // Show the scene containing the root layout.

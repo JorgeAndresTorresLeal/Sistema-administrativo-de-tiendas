@@ -17,16 +17,16 @@
             <Label layoutX="78.0" layoutY="72.0" text="Nombre de empleado" />
             <Label layoutX="368.0" layoutY="72.0" text="Usuario" />
             <Label layoutX="78.0" layoutY="131.0" text="Contraseña" />
-            <TextField layoutX="78.0" layoutY="90.0" />
-            <TextField layoutX="79.0" layoutY="149.0" />
-            <TextField layoutX="368.0" layoutY="90.0" />
+            <TextField fx:id="Nombrempleado" layoutX="78.0" layoutY="90.0" />
+            <TextField fx:id="Contraseña" layoutX="79.0" layoutY="149.0" />
+            <TextField fx:id="Nombreusuario" layoutX="368.0" layoutY="90.0" />
             <HBox layoutX="296.0" layoutY="313.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="25.6" prefWidth="71.0" text="Activar" />
+                  <Button fx:id="Activar" mnemonicParsing="false" onAction="#Activarempleado" prefHeight="25.6" prefWidth="71.0" text="Activar" />
                </children>
             </HBox>
             <Button layoutX="388.0" layoutY="314.0" mnemonicParsing="false" text="Desactivar" />
-            <Button layoutX="480.0" layoutY="314.0" mnemonicParsing="false" text="Actualizar" />
+            <Button fx:id="Actualizarempleado" layoutX="480.0" layoutY="314.0" mnemonicParsing="false" onAction="#Actualizarempleado" text="Actualizar" />
          </children>
       </AnchorPane>
    </children>

@@ -15,7 +15,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class MenuController implements Initializable{
+public class MenujefeController implements Initializable{
+
+	@FXML
+    private Button Cerrar;
 
 	@FXML
     private Button consultar;
@@ -40,9 +43,32 @@ public class MenuController implements Initializable{
 		// TODO Auto-generated method stub
 		
 	}
+    
+    @FXML void switchToInicio() {
+    	try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Inicio.fxml"));
+
+            Parent root = loader.load();
+            
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+            
+            
+
+            Stage myStage = (Stage) this.Cerrar.getScene().getWindow();
+            myStage.close();
+
+        } catch (IOException ex) {
+            Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 	
     @FXML 
-    private void switchToModificarEmpleado(){
+    private void switchToModificarEmpleado(ActionEvent event){
     	try {
             
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Crear-modificar empleado.fxml"));
@@ -70,12 +96,12 @@ public class MenuController implements Initializable{
             myStage.close();
 
         } catch (IOException ex) {
-            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
         }     	
     }
     
     @FXML
-    private void switchToCrearProducto()  {
+    private void switchToCrearProducto(ActionEvent event)  {
 try {
             
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Creacion de producto.fxml"));
@@ -103,12 +129,12 @@ try {
             myStage.close();
 
         } catch (IOException ex) {
-            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
         }  
     }
     
     @FXML
-    private void switchToRegistrarSalida(){
+    private void switchToRegistrarSalida(ActionEvent event){
     	try {
             
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Salida-Venta de Producto.fxml"));
@@ -136,7 +162,7 @@ try {
             myStage.close();
 
         } catch (IOException ex) {
-            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
         } 
     }
     
@@ -170,12 +196,12 @@ try {
             myStage.close();
 
         } catch (IOException ex) {
-            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
         } 
     }
 
     @FXML
-    private void switchToEntradaProducto() {
+    private void switchToEntradaProducto(ActionEvent event) {
 try {
             
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Registro entrada de producto.fxml"));
@@ -203,12 +229,12 @@ try {
             myStage.close();
 
         } catch (IOException ex) {
-            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
         } 
     }
     
     @FXML
-    private void switchToReporte() {
+    private void switchToReporte(ActionEvent event) {
     	try {
             
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Reporte.fxml"));
@@ -236,7 +262,7 @@ try {
             myStage.close();
 
         } catch (IOException ex) {
-            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
         } 
     }
 

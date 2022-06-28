@@ -13,12 +13,27 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class ReporteController  implements Initializable{
 
     @FXML
     private Button regresar;
+    
+    @FXML
+    private TextField Codigo;
+
+    @FXML
+    private DatePicker FechaFinal;
+
+    @FXML
+    private DatePicker FechaInicial;
+
+    @FXML
+    private TextField Nombreproducto;
+
     
     @Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -46,7 +61,7 @@ public class ReporteController  implements Initializable{
             myStage.close();
 
         } catch (IOException ex) {
-            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
