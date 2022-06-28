@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #37a8c8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sistema_administrativo_de_tienda.controlador.InicioController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #37a8c8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane layoutX="200.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: White; -fx-border-color: Black;">
          <children>
@@ -19,9 +19,9 @@
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <TextField fx:id="NombreDeUsuario" layoutX="24.0" layoutY="32.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.6" prefWidth="151.2" style="-fx-background-color: #f3f3ef; -fx-border-color: Black;" />
-            <PasswordField fx:id="Contraseña" layoutX="24.0" layoutY="100.0" style="-fx-background-color: #f3f3ef; -fx-border-color: Black;" />
-            <Button fx:id="Ingresar" layoutX="62.0" layoutY="159.0" mnemonicParsing="false" onAction="#Verificar" prefHeight="26.0" prefWidth="74.0" text="INGRESAR" />
+            <TextField layoutX="24.0" layoutY="32.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.6" prefWidth="151.2" style="-fx-background-color: #f3f3ef; -fx-border-color: Black;" />
+            <PasswordField layoutX="24.0" layoutY="100.0" style="-fx-background-color: #f3f3ef; -fx-border-color: Black;" />
+            <Button layoutX="62.0" layoutY="159.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="74.0" text="INGRESAR" />
          </children>
       </AnchorPane>
    </children>

@@ -13,28 +13,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class CrearEmpleadoController implements Initializable{
 
     @FXML
     private Button regresar;
-    
-    @FXML
-    private Button Activar;
-
-    @FXML
-    private Button Actualizarempleado;
-
-    @FXML
-    private TextField Contraseña;
-
-    @FXML
-    private TextField Nombrempleado;
-
-    @FXML
-    private TextField Nombreusuario;
     
     @Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -62,18 +46,8 @@ public class CrearEmpleadoController implements Initializable{
             myStage.close();
 
         } catch (IOException ex) {
-            Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
-    
-    @FXML
-    void Activarempleado(ActionEvent event) {
-
-    }
-
-    @FXML
-    void Actualizarempleado(ActionEvent event) {
-
     }
 
 }
