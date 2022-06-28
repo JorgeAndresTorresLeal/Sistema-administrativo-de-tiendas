@@ -1,10 +1,7 @@
 package database;
 
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class CrudSelecteProductos {
     private Connection connection;
@@ -69,10 +66,11 @@ public class CrudSelecteProductos {
             case "precio":
             case "cantidad":
             case "vencimiento":
-                String sqlStatement = "SELECT * FROM productos WHERE " + column + "=" + busqueda + ";";
+                String sqlStatement = "SELECT * FROM productos WHERE " + column+" = ?;";
                 try {
-                    Statement statement = connection.createStatement();
-                    ResultSet resultado = statement.executeQuery(sqlStatement);
+                    PreparedStatement statement = connection.prepareStatement(sqlStatement);
+                    statement.setString(1,busqueda);
+                    ResultSet resultado = statement.executeQuery();
                     while (resultado.next()){
                         int id = resultado.getInt(1);
                         String name = resultado.getString(2);
