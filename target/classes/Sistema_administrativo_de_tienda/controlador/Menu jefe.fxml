@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="624.0" style="-fx-background-color: #37a8c8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sistema_administrativo_de_tienda.controlador.MenuController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="624.0" style="-fx-background-color: #37a8c8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sistema_administrativo_de_tienda.controlador.MenujefeController">
    <children>
       <AnchorPane layoutX="66.0" layoutY="30.0" prefHeight="155.0" prefWidth="130.0" style="-fx-background-color: White; -fx-border-color: Black;">
          <children>
@@ -87,5 +87,10 @@
             </Label>
          </children>
       </AnchorPane>
+      <Button fx:id="Cerrar" layoutX="509.0" layoutY="377.0" mnemonicParsing="false" onAction="#switchToInicio" prefHeight="26.0" prefWidth="98.0" text="CERRAR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

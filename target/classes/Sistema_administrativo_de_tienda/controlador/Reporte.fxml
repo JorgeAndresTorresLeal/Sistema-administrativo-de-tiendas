@@ -20,14 +20,14 @@
             <HBox layoutX="296.0" layoutY="313.0" />
             <AnchorPane layoutX="14.0" layoutY="36.0" prefHeight="314.0" prefWidth="167.0" style="-fx-border-color: Black;">
                <children>
-                  <TextField layoutX="14.0" layoutY="32.0" prefHeight="26.0" prefWidth="130.0" />
+                  <TextField fx:id="Nombreproducto" layoutX="14.0" layoutY="32.0" prefHeight="26.0" prefWidth="130.0" />
                   <Label layoutX="16.0" layoutY="14.0" text="Nombre de producto" />
                   <Label layoutX="17.0" layoutY="70.0" prefHeight="18.0" prefWidth="124.0" text="Código" />
-                  <TextField layoutX="14.0" layoutY="88.0" prefHeight="26.0" prefWidth="130.0" />
+                  <TextField fx:id="Codigo" layoutX="14.0" layoutY="88.0" prefHeight="26.0" prefWidth="130.0" />
                   <Label layoutX="14.0" layoutY="124.0" text="Desde" />
-                  <DatePicker layoutX="14.0" layoutY="144.0" prefHeight="26.0" prefWidth="130.0" />
+                  <DatePicker fx:id="FechaInicial" layoutX="14.0" layoutY="144.0" prefHeight="26.0" prefWidth="130.0" />
                   <Label layoutX="14.0" layoutY="177.0" text="Hasta" />
-                  <DatePicker layoutX="14.0" layoutY="195.0" prefHeight="26.0" prefWidth="130.0" />
+                  <DatePicker fx:id="FechaFinal" layoutX="14.0" layoutY="195.0" prefHeight="26.0" prefWidth="130.0" />
                </children>
             </AnchorPane>
             <TableView layoutX="187.0" layoutY="37.0" prefHeight="314.0" prefWidth="607.0">

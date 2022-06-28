@@ -13,28 +13,21 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class VentaProductoController implements Initializable{
+public class MenuEmpleadoController implements Initializable{
 
     @FXML
-    private Button regresar;
+    private Button Consultarproducto;
+
+    @FXML
+    private Button Regristrarsalidadeproducto;
+
+    @FXML
+    private Button entradaProducto;
     
     @FXML
-    private Button Cancelar;
-
-    @FXML
-    private TextField DineroADevolver;
-
-    @FXML
-    private TextField DineroRecibido;
-
-    @FXML
-    private TextField Preciototal;
-
-    @FXML
-    private Button Terminar;
+    private Button Cerrar;
     
     @Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -43,9 +36,24 @@ public class VentaProductoController implements Initializable{
 	}
 
     @FXML
-    void switchToMenu() {
+    void switchToConsultar(ActionEvent event) {
+
+    }
+
+    @FXML
+    void switchToEntradaProducto(ActionEvent event) {
+
+    }
+
+    @FXML
+    void switchToRegistrarSalida(ActionEvent event) {
+
+    }
+
+	
+	@FXML void switchToInicio() {
     	try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Menu jefe.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Inicio.fxml"));
 
             Parent root = loader.load();
             
@@ -58,25 +66,12 @@ public class VentaProductoController implements Initializable{
             
             
 
-            Stage myStage = (Stage) this.regresar.getScene().getWindow();
+            Stage myStage = (Stage) this.Cerrar.getScene().getWindow();
             myStage.close();
 
         } catch (IOException ex) {
             Logger.getLogger(MenujefeController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-    @FXML
-    void CancelarVenta(ActionEvent event) {
-
-    }
-
-    @FXML
-    void TerminarVenta(ActionEvent event) {
-
-    }
-
-    
-    
 
 }

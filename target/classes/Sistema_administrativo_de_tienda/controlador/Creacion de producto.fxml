@@ -17,18 +17,18 @@
             <Label layoutX="78.0" layoutY="72.0" text="Nombre de producto" />
             <Label layoutX="368.0" layoutY="72.0" prefHeight="18.0" prefWidth="113.0" text="Código de producto" />
             <Label layoutX="78.0" layoutY="131.0" text="Tipo de IVA" />
-            <TextField layoutX="78.0" layoutY="90.0" />
-            <TextField layoutX="79.0" layoutY="149.0" />
-            <TextField layoutX="368.0" layoutY="90.0" />
+            <TextField fx:id="Nombreproducto" layoutX="78.0" layoutY="90.0" />
+            <TextField fx:id="TipoIVA" layoutX="79.0" layoutY="149.0" />
+            <TextField fx:id="Codigoproduco" layoutX="368.0" layoutY="90.0" />
             <HBox layoutX="296.0" layoutY="313.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="25.6" prefWidth="71.0" text="Activar" />
+                  <Button fx:id="Activar" mnemonicParsing="false" onAction="#Activarproducto" prefHeight="25.6" prefWidth="71.0" text="Activar" />
                </children>
             </HBox>
-            <Button layoutX="388.0" layoutY="314.0" mnemonicParsing="false" text="Desactivar" />
-            <Button layoutX="480.0" layoutY="314.0" mnemonicParsing="false" text="Actualizar" />
-            <TextField layoutX="368.0" layoutY="149.0" />
-            <TextField layoutX="78.0" layoutY="205.0" />
+            <Button fx:id="Desactivar" layoutX="388.0" layoutY="314.0" mnemonicParsing="false" onAction="#Desactivarproducto" text="Desactivar" />
+            <Button fx:id="Actualizar" layoutX="480.0" layoutY="314.0" mnemonicParsing="false" onAction="#Actualizarproducto" text="Actualizar" />
+            <TextField fx:id="PorcentajeIVA" layoutX="368.0" layoutY="149.0" />
+            <TextField fx:id="Precioventa" layoutX="78.0" layoutY="205.0" />
             <Label layoutX="78.0" layoutY="187.0" text="Precio de venta" />
             <Label layoutX="368.0" layoutY="132.0" text="Porcentaje de IVA" />
          </children>
