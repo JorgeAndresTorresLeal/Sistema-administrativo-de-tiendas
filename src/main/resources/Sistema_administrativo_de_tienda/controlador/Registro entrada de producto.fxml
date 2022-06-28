@@ -17,9 +17,7 @@
             <Label layoutX="14.0" layoutY="5.0" text="REGISTRO ENTRADA DE PRODUCTO" />
             <Label layoutX="78.0" layoutY="72.0" text="Nombre de producto" />
             <Label layoutX="368.0" layoutY="72.0" prefHeight="18.0" prefWidth="113.0" text="Código de producto" />
-            <Label layoutX="78.0" layoutY="131.0" text="Proveedor" />
             <TextField fx:id="Nombreproducto" layoutX="78.0" layoutY="90.0" prefHeight="26.0" prefWidth="154.0" />
-            <TextField fx:id="Proveedor" layoutX="79.0" layoutY="149.0" prefHeight="26.0" prefWidth="154.0" />
             <TextField fx:id="Codigoproducto" layoutX="368.0" layoutY="90.0" />
             <HBox layoutX="296.0" layoutY="313.0" />
             <Button fx:id="Guardar" layoutX="414.0" layoutY="314.0" mnemonicParsing="false" onAction="#Guardarentradadeproducto" prefHeight="26.0" prefWidth="125.0" text="Guardar" />
@@ -27,9 +25,9 @@
             <TextField fx:id="Lote" layoutX="78.0" layoutY="205.0" prefHeight="26.0" prefWidth="154.0" />
             <Label layoutX="78.0" layoutY="187.0" text="Lote" />
             <Label layoutX="368.0" layoutY="132.0" text="Cantidad" />
-            <TextField fx:id="Preciocompraproducto" layoutX="77.0" layoutY="266.0" prefHeight="26.0" prefWidth="154.0" />
+            <TextField fx:id="Preciocompraproducto" layoutX="78.0" layoutY="148.0" prefHeight="26.0" prefWidth="154.0" />
             <Label layoutX="368.0" layoutY="187.0" text="Fecha de vencimiento" />
-            <Label layoutX="77.0" layoutY="248.0" text="Precio de compra " />
+            <Label layoutX="78.0" layoutY="132.0" text="Precio de compra " />
             <DatePicker fx:id="Fechavencimiento" layoutX="368.0" layoutY="205.0" prefHeight="26.0" prefWidth="150.0" />
          </children>
       </AnchorPane>
