@@ -1,6 +1,7 @@
 package Sistema_administrativo_de_tienda.controlador;
 
 import database.ConnectionDb;
+import database.Login;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,6 +10,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.Connection;
 
 /**
  * JavaFX App
@@ -36,8 +38,7 @@ public class App extends Application {
 
 
     public static void main(String[] args) {
-        ConnectionDb connectionDb = new ConnectionDb();
-        connectionDb.conectar();
+        Connection conec = new ConnectionDb().conectar();
         launch();
     }
 
